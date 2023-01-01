@@ -8,7 +8,9 @@ window.turnChanger = function turnChanger() {
 	if (currentUser == "Mario") {
 		currentUser = "Juan";
 	} else {
-		currentUser = "Mario";
+		if(currentUser=="Juan")
+			currentUser = "Carlos";
+		else currentUser="Mario";
 	}
 
 	document.getElementById("screen").innerHTML = "It's " + currentUser + "'s turn";

@@ -3,4 +3,8 @@ window.onload = function myLoadFunction() {
 	//some code here
 };
 
+const button = document.getElementById("theGreen");
+button.addEventListener("click", function() {
+  alert("Hello!");
+});
 //the listener function here
